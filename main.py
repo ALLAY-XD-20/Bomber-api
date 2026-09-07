@@ -1282,14 +1282,12 @@ ULTIMATE_APIS = [
         "data": lambda phone: f'{{"phone":"{phone}"}}'
     },
     {
-        "name": "Ixigo OTP",
-        "url": "https://api.ixigo.com/v1/otp",
-        "method": "POST",
-        "headers": {"Content-Type": "application/json"},
- 
-    # ========== ADD 800+ MORE APIS HERE (from your list) ==========
-    # (The original script had a comment to add 800+ more; 
-    #  You can paste additional entries here following the same format.)
+    "name": "Ixigo OTP",
+    "url": "https://api.ixigo.com/v1/otp",
+    "method": "POST",
+    "headers": {"Content-Type": "application/json"},
+    "data": lambda phone: f'{{"phone":"{phone}"}}'   # <-- add this line
+},   
 ]
 
 # ================================================================
